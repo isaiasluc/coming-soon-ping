@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    html, body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      font-family: 'Libre Franklin', sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 95vh 5vh;
+      grid-template-areas: "main"
+                          "footer";
+    }
+    main {
+      grid-area: main;
+    }
+    footer {
+      grid-area: footer;
+    }
+    .top-text {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 50px;
+    }
+    .medium-text {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 20px;
+      color: gray;
+    }
+    .medium-text > b {
+      color: black;
+    }
+    .bottom-text {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .input-email {
+      text-align: center;
+      margin-top: 50px;
+      
+    }
+    input[type=email] {
+      border: 1px solid lightgray;
+      border-radius: 20px;
+      box-sizing: border-box;
+      height: 40px;
+      width: 300px;
+      text-align: left;
+      padding: 15px;
+      margin-right: 10px;
+      outline: none;
+    }
+    input[type=submit] {
+      border: 1px solid lightgray;
+      border-radius: 20px;
+      box-sizing: border-box;
+      background-color: hsl(223, 87%, 63%);
+      color: white;
+      height: 40px;
+      width: 150px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      outline: none;
+    }
+    input[type=submit]:hover {
+      background-color: hsl(223, 100%, 88%);
+      cursor: pointer;
+    }
+    .dashboard {
+      width: 100%;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .dashboard > img {
+      height: 300px;
+    }
+    .icons {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .box-icons {
+      padding: 5px;
+      border: solid 1px lightgray;
+      border-radius: 10px;
+      margin: 3px;
+    }
+    .box-icons:hover {
+      background-color: hsl(223, 87%, 63%);
+    }
+    .bottom {
+      text-align: center;
+      font-size: 10px;
+      margin-top: 5px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header></header>
+    <main>
+      <div class="top-text">
+        PING.
+      </div>
+      <div class="medium-text">
+        We are launching <b>soon!</b>
+      </div>
+      <div class="bottom-text">
+        Subscribe and get notified
+      </div>
+      <div class="input-email">
+        <input type="email" name="email" id="email" placeholder="Your email address" required>
+        <input type="submit" value="Notify Me">
+      </div>
+      <div class="dashboard">
+        <img src="./images/illustration-dashboard.png">
+      </div>
+      <div class="icons">
+        <div class="box-icons">
+          <a href="http://facebook.com/isaiasluc"> <i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="box-icons">
+          <a href="http://github.com/isaiasluc"> <i class="fab fa-github"></i></a>
+        </div>
+        <div class="box-icons">
+          <a href="http://instagram.com/isaiasluc"> <i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="bottom">
+        &copy; Copyright Ping. All rights reserved.
+      </div>
+    </main>
+    <aside></aside>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="http://github.com/isaiasluc">Isaías Lucena</a>.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
